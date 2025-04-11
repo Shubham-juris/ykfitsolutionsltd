@@ -1,12 +1,15 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Navbar from "./component/Common/Navbar";
+import Footer from "./component/Common/Footer";
+import AppRoutes from "./AppRoutes";
 
 function App() {
   return (
     <>
-      <h1 class='text-3xl font-bold underline text-center mt-20 py-20 bg-stone-600'>
-        Hello world!
-      </h1>
+      <Navbar />
+      <AppRoutes />
+      <Footer />
     </>
   );
 }
