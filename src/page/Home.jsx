@@ -11,18 +11,20 @@ const Home = () => {
         className="h-screen bg-cover bg-center relative"
         style={{ backgroundImage: `url(${backgroundImageimage})` }}
       >
-        <div className="absolute top-1/2 right-10 transform -translate-y-1/2">
-          <div className="bg-gray-300 bg-opacity-80 rounded-full p-16 text-center w-96 h-96 flex flex-col justify-center items-center mt-60">
-            <h2 className="text-lg tracking-wide text-gray-800 font-medium mb-4 ">
+        {/* <div className="relative w-full h-[400px] bg-gray-100 flex items-center justify-center px-4 md:px-12">
+          <div className="text-center md:text-left">
+            <h2 className="tracking-wide text-gray-800 mb-4 text-3xl md:text-4xl font-bold leading-tight">
               PROFESSIONAL <br />
               TECHNOLOGY <br />
               ASSISTANCE
             </h2>
-            <button className="bg-black text-white py-2 px-6 mt-4 font-semibold shadow-md hover:bg-gray-800">
-              BOOK NOW
-            </button>
+            <div className="flex justify-center md:justify-start">
+              <button className="bg-black text-white py-2 px-10 md:px-20 mt-4 font-semibold shadow-md hover:bg-gray-800 transition">
+                BOOK NOW
+              </button>
+            </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="bg-gray-400 py-16 px-6 lg:px-24">
         <div className="max-w-3xl text-left text-black">
@@ -41,89 +43,96 @@ const Home = () => {
           </button>
         </div>
       </div>
-      <div className="bg-white px-4 py-16">
-        <h1 className="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
-          ABOUT YKF IT SOLUTIONS
-        </h1>
+      <div className=" flex flex-col items-center justify-center bg-gray-500 text-white">
+        <div className="bg-white px-35 py-21">
+          <h1 className="text-3xl md:text-5xl font-bold text-center mb-16 text-gray-800">
+            ABOUT YKF IT SOLUTIONS
+          </h1>
 
-        <div className="flex flex-col md:flex-row items-center gap-8 mb-2">
-          <img
-            src={image2}
-            alt="Technical Work"
-            className="w-full md:w-1/2 rounded shadow-md"
-          />
-          <div className="w-full md:w-1/2 text-center md:text-left">
-            <h2 className="text-sm font-semibold tracking-widest text-gray-600 mb-4">
-              TECHNICAL EXPERIENCE
-            </h2>
-            <p className="text-gray-700 text-base mb-6">
-              We are well-versed in a variety of operating systems, networks,
-              and databases. At YKF IT Solutions we work with just about any
-              technology that a small business would encounter. We use this
-              expertise to help customers with small to mid-sized projects.
-            </p>
-            <button className="bg-gray-800 text-white px-6 py-2 shadow hover:bg-gray-900 transition">
-              BOOK ONLINE
-            </button>
+          <div className="flex flex-col md:flex-row items-center gap-18 mb-2">
+            <img
+              src={image2}
+              alt="Technical Work"
+              className="w-full h-75 md:w-1/2 rounded shadow-md mt-12 "
+            />
+            <div className="w-full md:w-1/2 text-center md:text-left">
+              <h2 className="text-lg font-semibold tracking-widest text-gray-600 mb-4 text-center">
+                TECHNICAL EXPERIENCE
+              </h2>
+              <p className="text-gray-700 text-base mb-6">
+                We are well-versed in a variety of operating systems, networks,
+                and databases. At YKF IT Solutions we work`` with just about any
+                technology that a small business would encounter. We use this
+                expertise to help customers with small to mid-sized projects.
+              </p>
+              <div className="flex justify-center md:justify-center">
+                <button className="bg-gray-800 text-white px-6 py-2 shadow hover:bg-gray-900 transition">
+                  BOOK ONLINE
+                </button>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div className="flex flex-col md:flex-row items-center gap-8 mb-16">
-          <div className="w-full md:w-1/2 text-center md:text-lift order-2 md:order-1">
-            <h2 className="text-sm font-semibold tracking-widest text-gray-600 mb-4">
-              HIGH ROI
-            </h2>
-            <p className="text-gray-700 text-base mb-6">
-              Do you spend most of your IT budget on maintaining your current
-              system? Many companies find that constant maintenance eats into
-              their budget for new technology. By outsourcing your IT management
-              to us, you can focus on what you do best—running your business.
-            </p>
-            <button className="bg-gray-800 text-white px-6 py-2 shadow hover:bg-gray-900 transition">
-              SEE SERVICES
-            </button>
+          <div className="flex flex-col md:flex-row items-center gap-8 mb-16 py-27">
+            <div className="w-full md:w-1/2 text-center md:text-lift order-2 md:order-1">
+              <h2 className="text-lg font-semibold tracking-widest text-gray-600 mb-4">
+                HIGH ROI
+              </h2>
+              <p className="text-gray-700 text-base mb-6">
+                Do you spend most of your IT budget on maintaining your current
+                system? Many companies find that constant maintenance eats into
+                their budget for new technology. By outsourcing your IT
+                management to us, you can focus on what you do best—running your
+                business.
+              </p>
+              <button className="bg-gray-800 text-white px-6 py-2 shadow hover:bg-gray-900 transition">
+                SEE SERVICES
+              </button>
+            </div>
+            <img
+              src={image1}
+              alt="High ROI"
+              className="h-75 md:w-1/2 rounded shadow-md order-1 md:order-2 "
+            />
           </div>
-          <img
-            src={image1}
-            alt="High ROI"
-            className="w-full md:w-1/2 rounded shadow-md order-1 md:order-2"
-          />
-        </div>
 
-        <div className="flex flex-col md:flex-row items-center gap-8">
-          <img
-            src={image}
-            alt="Team Collaboration"
-            className="w-full md:w-1/2 rounded shadow-md"
-          />
-          <div className="w-full md:w-1/2 text-center md:text-left">
-            <h2 className="text-sm font-semibold tracking-widest text-gray-600 mb-4">
-              SATISFACTION GUARANTEED
-            </h2>
-            <p className="text-gray-700 text-base mb-6">
-              The world of technology can be fast-paced and scary. That’s why
-              our goal is to provide an experience that is tailored to your
-              company’s needs. No matter the budget, we pride ourselves on
-              providing professional customer service. We guarantee you will be
-              satisfied with our work.
-            </p>
-            <button className="bg-gray-800 text-white px-6 py-2 shadow hover:bg-gray-900 transition">
-              CONTACT US
-            </button>
+          <div className="flex flex-col md:flex-row items-center gap-18">
+            <img
+              src={image}
+              alt="Team Collaboration"
+              className=" h-75  md:w-1/2 rounded shadow-md"
+            />
+            <div className="w-full md:w-1/2 text-center md:text-left">
+              <h2 className="text-lg text-center font-semibold tracking-widest text-gray-600 mb-4">
+                SATISFACTION GUARANTEED
+              </h2>
+              <p className="text-gray-700 text-base mb-6">
+                The world of technology can be fast-paced and scary. That’s why
+                our goal is to provide an experience that is tailored to your
+                company’s needs. No matter the budget, we pride ourselves on
+                providing professional customer service. We guarantee you will
+                be satisfied with our work.
+              </p>
+              <div className="flex justify-center md:justify-center">
+                <button className="bg-gray-800 text-white px-6 py-2 shadow hover:bg-gray-900 transition">
+                  CONTACT US
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div className="h-100 flex flex-col items-center justify-center bg-gray-500 text-white">
         <div className="text-center px-4 py-8">
-          <h1 className="text-3xl font-bold mb-4 md:text-4xl text-black">
+          <h1 className="text-3xl font-bold mb-4 md:text-4xl text-white">
             CONTACT US
           </h1>
-          <p className="text-lg mb-4 md:text-xl">
+          <p className="text-lg mb-4 md:text-xl text">
             BETTER YET, SEE US IN PERSON!
           </p>
           <p className="text-base mb-2 md:text-lg">
-            We love our customers, so feel free <br /> to visit during normal
-            business hours.
+            We love our customers, so feel free to visit during normal business
+            hours.
           </p>
           <div className="mb-4">
             <p className="text-base md:text-lg">YKF IT SOLUTIONS</p>
@@ -141,17 +150,15 @@ const Home = () => {
           </div>
         </div>
       </div>
+
       <div
-        className="relative bg-cover bg-center h-160 flex items-center justify-center"
+        className="relative bg-cover bg-center h-120 flex items-center justify-center"
         style={{ backgroundImage: `url(${image4})` }}
       >
         <div className="absolute inset-0 bg-black opacity-30"></div>
 
         <div className="relative text-center text-white">
-          <h1 className="text-3xl font-bold tracking-wide">REVIEWS</h1>
-          <div className="bg-black bg-opacity-50 mt-4 px-6 py-2 rounded">
-            <p className="text-sm">Reviews coming soon!</p>
-          </div>
+          <h1 className="text-5xl font-bold tracking-wide mt-48">REVIEWS</h1>
         </div>
       </div>
     </>

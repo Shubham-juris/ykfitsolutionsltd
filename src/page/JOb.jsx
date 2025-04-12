@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const JOb = () => {
   return (
@@ -10,30 +11,35 @@ const JOb = () => {
       <div className="grid md:grid-cols-2 gap-12">
         {/* Left Column: Job Listings */}
         <div>
-          <h2 className="text-sm uppercase tracking-wide text-gray-500 mb-4">
+          <h2 className="text-sm uppercase tracking-wide text-black-500 mb-4 font-bold">
             Join Our Team...
           </h2>
-          <h3 className="text-lg font-semibold mb-6 text-gray-800">
-            Vacancies:
-          </h3>
 
-          <ul className="space-y-5 text-gray-700">
+          <ul className="space-y-5 text-gray-700 mt-9">
             {[
-              ["Software Developer", "2 Positions"],
-              ["Website developer", "2 Positions"],
-              ["Data Analyst", "1 Position"],
-              ["Digital Marketing Coordinator", "1 Position"],
-              ["Content creator", "1 Position"],
-              ["Bookkeeper", "2 Positions"],
-              ["Business Development Officer", "1 Position"],
-              ["Systems Engineer", "1 Position"],
-              ["Marketing Coordinator", "1 Position"],
-            ].map(([title, count], i) => (
+              ["Software Developer", "2 Positions", "/software-developer"],
+              ["Website Developer", "2 Positions", "/website-developer"],
+              ["Data Analyst", "1 Position", "/data-analist"],
+              [
+                "Digital Marketing Coordinator",
+                "1 Position",
+                "/digital-marketig",
+              ],
+              ["Content Creator", "1 Position", "/contente-creator"],
+              ["Bookkeeper", "2 Positions", "/bookkeeper"],
+              [
+                "Business Development Officer",
+                "1 Position",
+                "/business-development",
+              ],
+              ["Systems Engineer", "1 Position", "/systems-engineer"],
+              ["Marketing Coordinator", "1 Position", "/marketing-coordinator"],
+            ].map(([title, count, link], i) => (
               <li key={i} className="flex justify-between">
                 <div>
                   • {title}
                   <div className="text-sm text-blue-500 hover:underline cursor-pointer">
-                    More
+                    <Link to={link}>More</Link>
                   </div>
                 </div>
                 <span>{count}</span>
@@ -44,7 +50,7 @@ const JOb = () => {
 
         {/* Right Column: Application Form */}
         <div>
-          <h2 className="text-sm uppercase tracking-wide text-gray-500 mb-4">
+          <h2 className="text-sm uppercase tracking-wide text-black mb-4 font-bold">
             Apply Now!
           </h2>
 
