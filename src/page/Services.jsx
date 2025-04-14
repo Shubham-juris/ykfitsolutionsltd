@@ -4,6 +4,7 @@ import image7 from "../assets/ykfitImage2/image10.jpg";
 import image9 from "../assets/ykfitImage2/image9.jpg";
 import image11 from "../assets/ykfitImage2/image11.jpg";
 import image8 from "../assets/ykfitImage2/image8.jpg";
+import { Mail, Phone, MapPin, Clock } from "lucide-react";
 const Services = () => {
   return (
     <>
@@ -22,9 +23,9 @@ const Services = () => {
 
       <div className=" flex flex-col items-center justify-center bg-white text-black">
         {/* Header Text */}
-        <div className="text-center mb-10">
-          <h3 className="text-3xl font-bold mb-2 py-8">SOFTWARE DEVELOPMENT</h3>
-          <p className="text-lg">
+        <div className="text-center mb-10 py-2 mt-20">
+          <h3 className="text-4xl font-medium mb-2">SOFTWARE DEVELOPMENT</h3>
+          <p className="text-lg py-8">
             We use advanced technologies to deliver high-quality solutions{" "}
             tailored to our customer's requirements. Our proficiency in the
             <br />
@@ -42,9 +43,9 @@ const Services = () => {
             <img
               src={image7}
               alt="Software Development"
-              className="w-full h-88 object-cover mb-4 rounded"
+              className="w-full h-88 object-cover mb-4 rounded "
             />
-            <h3 className="text-xl font-bold mb-2 py-8">
+            <h3 className="text-xl font-bold mb-2 py-8 ">
               SOFTWARE DEVELOPMENT
             </h3>
             <p className="text-sm">
@@ -56,7 +57,6 @@ const Services = () => {
               maintenance.
             </p>
           </div>
-
           {/* Website Development */}
           <div className="bg-white p-4 rounded-lg text-center">
             <img
@@ -73,7 +73,6 @@ const Services = () => {
               and mobile device.
             </p>
           </div>
-
           {/* Office 365 Integration */}
           <div className="bg-white p-4 rounded-lg text-center">
             <img
@@ -92,7 +91,6 @@ const Services = () => {
               and mobile device.
             </p>
           </div>
-
           {/* Desktop & User Support */}
           <div className="bg-white p-4 rounded-lg text-center">
             <img
@@ -114,31 +112,40 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className="h-100 flex flex-col items-center justify-center bg-gray-500 text-white">
-        <div className="text-center px-4 py-8">
-          <h1 className="text-3xl font-bold mb-4 md:text-4xl text-white">
-            CONTACT US
-          </h1>
-          <p className="text-lg mb-4 md:text-xl text">
+      <div className="min-h-screen flex flex-col items-center justify-center bg-gray-600 text-white px-4 py-16">
+        <div className="text-center max-w-2xl w-full">
+          <h1 className="text-3xl md:text-4xl font-bold mb-14">CONTACT US</h1>
+          <p className="text-lg md:text-xl mb-2 font-semibold">
             BETTER YET, SEE US IN PERSON!
           </p>
-          <p className="text-base mb-2 md:text-lg">
+          <p className="text-base md:text-lg text-gray-200 mb-8">
             We love our customers, so feel free to visit during normal business
             hours.
           </p>
-          <div className="mb-4">
-            <p className="text-base md:text-lg">YKF IT SOLUTIONS</p>
-            <p className="text-base md:text-lg">
-              #200, 808 4th Ave SW, Calgary AB T2P 3E8
-            </p>
-            <p className="text-base md:text-lg">ykfitSolutions@gmail.com</p>
-            <p className="text-base md:text-lg">403-363-8474</p>
+          <div className="space-y-4 mb-8">
+            <div className="flex items-center justify-center gap-3">
+              <MapPin className="w-5 h-5 text-white" />
+              <p className="text-base md:text-lg">
+                #200, 808 4th Ave SW, Calgary AB T2P 3E8
+              </p>
+            </div>
+            <div className="flex items-center justify-center gap-3">
+              <Mail className="w-5 h-5 text-white" />
+              <p className="text-base md:text-lg">ykfitSolutions@gmail.com</p>
+            </div>
+            <div className="flex items-center justify-center gap-3">
+              <Phone className="w-5 h-5 text-white" />
+              <p className="text-base md:text-lg">403-363-8474</p>
+            </div>
           </div>
-          <div>
-            <p className="text-base font-semibold md:text-lg">HOURS</p>
-            <p className="text-base md:text-lg">
-              Open today 09:00 a.m. – 05:00 p.m.
-            </p>
+          <p className="text-base md:text-lg font-semibold">HOURS</p>
+          <div className="flex items-center justify-center gap-3">
+            <Clock className="w-5 h-5 text-white" />
+            <div className="text-center">
+              <p className="text-base md:text-lg">
+                Open today 09:00 a.m. – 05:00 p.m.
+              </p>
+            </div>
           </div>
         </div>
       </div>

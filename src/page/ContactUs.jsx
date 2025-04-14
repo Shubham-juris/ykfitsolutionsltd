@@ -11,7 +11,8 @@ const ContactUs = () => {
             Get In Touch
           </h2>
           <p className="text-center text-gray-600 mb-10 text-lg">
-            We'd love to hear from you. Please fill out the form and we’ll respond shortly.
+            We'd love to hear from you. Please fill out the form and we’ll
+            respond shortly.
           </p>
 
           <form className="space-y-6">
@@ -48,11 +49,13 @@ const ContactUs = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-gray-600 text-sm max-w-xl mx-auto">
-              This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
+              This site is protected by reCAPTCHA and the Google Privacy Policy
+              and Terms of Service apply.
             </p>
             <p className="mt-4 text-lg text-gray-700 font-medium max-w-2xl mx-auto">
-              Let us tailor a service package that meets your needs. Tell us about your business,
-              and we’ll get back to you with a custom solution.
+              Let us tailor a service package that meets your needs. Tell us
+              about your business, and we’ll get back to you with a custom
+              solution.
             </p>
           </div>
 
@@ -84,9 +87,16 @@ const ContactUs = () => {
                 <FaClock className="text-blue-600" /> Business Hours
               </h3>
               <ul className="text-gray-700 space-y-2 text-lg">
-                <li>Mon – Fri: <span className="font-medium">09:00 a.m. – 05:00 p.m.</span></li>
-                <li>Sat: <span className="font-medium">Close</span></li>
-                <li>Sun: <span className="font-medium">Close</span></li>
+                <li>
+                  Mon – Fri:{" "}
+                  <span className="font-medium">09:00 a.m. – 05:00 p.m.</span>
+                </li>
+                <li>
+                  Sat: <span className="font-medium">Close</span>
+                </li>
+                <li>
+                  Sun: <span className="font-medium">Close</span>
+                </li>
               </ul>
             </div>
           </div>
