@@ -12,7 +12,7 @@ const Home = () => {
         style={{ backgroundImage: `url(${backgroundImageimage})` }}
       ></div>
       <div className="bg-white-200 py-16 px-6 lg:px-24">
-        <div className="max-w-3xl text-left text-black">
+        <div className="max-w-3xl text-left text-gray-800">
           <h1 className="text-4xl font-bold mb-6">WELCOME</h1>
           <p className="text-lg mb-8">
             YKF IT Solutions provides you with best solutions for your software

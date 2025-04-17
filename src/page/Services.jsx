@@ -21,7 +21,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className=" flex flex-col items-center justify-center bg-white text-black">
+      <div className=" flex flex-col items-center justify-center bg-white text-gray-800">
         {/* Header Text */}
         <div className="text-center mb-10 py-2 mt-20">
           <h3 className="text-4xl font-medium mb-2">SOFTWARE DEVELOPMENT</h3>
