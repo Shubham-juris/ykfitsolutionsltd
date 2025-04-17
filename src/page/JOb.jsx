@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 
 const JOb = () => {
   return (
-    <div className="bg-white px-4 py-16 max-w-7xl mx-auto">
-      <h1 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+    <div className="bg-white px-4 py-28  max-w-7xl mx-auto">
+      <h1 className="text-3xl md:text-4xl font-bold text-center mb-12  text-gray-800">
         WE'RE HIRING!
       </h1>
 
       <div className="grid md:grid-cols-2 gap-12">
         {/* Left Column: Job Listings */}
         <div>
-          <h2 className="text-sm uppercase tracking-wide text-black-500 mb-4 font-bold">
+          <h2 className="text-sm uppercase tracking-wide text-gray-800-500 mb-4 font-bold">
             Join Our Team...
           </h2>
 
@@ -50,7 +50,7 @@ const JOb = () => {
 
         {/* Right Column: Application Form */}
         <div>
-          <h2 className="text-sm uppercase tracking-wide text-black mb-4 font-bold">
+          <h2 className="text-sm uppercase tracking-wide text-gray-800 mb-4 font-bold">
             Apply Now!
           </h2>
 
