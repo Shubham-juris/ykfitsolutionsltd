@@ -37,7 +37,7 @@ const Services = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 justify-center max-w-7xl mx-auto md:grid-cols-2 gap-6">
           {/* Software Development */}
           <div className="bg-white p-4 rounded-lg text-center">
             <img
@@ -112,7 +112,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className="min-h-screen flex flex-col items-center justify-center bg-gray-600 text-white px-4 py-16">
+      <div className=" flex flex-col items-center justify-center bg-gray-600 text-white px-4 py-16">
         <div className="text-center max-w-2xl w-full">
           <h1 className="text-3xl md:text-4xl font-bold mb-14">CONTACT US</h1>
           <p className="text-lg md:text-xl mb-2 font-semibold">
