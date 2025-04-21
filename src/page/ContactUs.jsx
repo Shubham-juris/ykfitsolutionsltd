@@ -5,8 +5,8 @@ const ContactUs = () => {
   return (
     <>
       {/* Contact Form Section */}
-      <section className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-white to-blue-50 w-full px-6 py-20">
-        <div className="w-full max-w-4xl bg-white rounded-2xl shadow-lg p-10">
+      <section className="flex flex-col items-center justify-center bg-gradient-to-br from-white to-blue-50 w-full px-6 py-20">
+        <div className="w-full max-w-7xl bg-white rounded-2xl shadow-lg p-10">
           <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-6">
             Get In Touch
           </h2>

@@ -8,10 +8,10 @@ const Home = () => {
   return (
     <>
       <div
-        className="h-screen bg-cover bg-center relative"
+        className="w-full h-[100vh] bg-cover bg-center relative"
         style={{ backgroundImage: `url(${backgroundImageimage})` }}
       ></div>
-      <div className="bg-white-200 py-16 px-6 lg:px-24">
+      <div className="bg-white-200 flex flex-col justify-center mx-auto max-w-7xl py-16 px-6 lg:px-24">
         <div className="max-w-3xl text-left text-gray-800">
           <h1 className="text-4xl font-bold mb-6">WELCOME</h1>
           <p className="text-lg mb-8">
@@ -109,7 +109,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="min-h-screen flex flex-col items-center justify-center bg-gray-500 text-white px-4 py-16">
+      <div className="flex flex-col items-center justify-center bg-gray-500 text-white px-4 py-16">
         <div className="text-center max-w-2xl w-full">
           <h1 className="text-3xl md:text-4xl font-bold mb-14">CONTACT US</h1>
           <p className="text-lg md:text-xl mb-2 font-semibold">
