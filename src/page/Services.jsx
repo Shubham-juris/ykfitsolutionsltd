@@ -1,9 +1,9 @@
 import React from "react";
-import image3 from "../assets/ykfitImage/image3.jpg";
-import image7 from "../assets/ykfitImage2/image10.jpg";
-import image9 from "../assets/ykfitImage2/image9.jpg";
-import image11 from "../assets/ykfitImage2/image11.jpg";
-import image8 from "../assets/ykfitImage2/image8.jpg";
+import image3 from "../assets/ykfitImage/image3.webp";
+import image7 from "../assets/ykfitImage2/image10.webp";
+import image9 from "../assets/ykfitImage2/image9.webp";
+import image11 from "../assets/ykfitImage2/image11.webp";
+import image8 from "../assets/ykfitImage2/image8.webp";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 const Services = () => {
   return (

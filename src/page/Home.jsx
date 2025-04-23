@@ -1,8 +1,8 @@
 import React from "react";
-import backgroundImageimage from "../assets/homeImage/homeImage.jpg";
-import image from "../assets/ykfitImage/image.jpg";
-import image1 from "../assets/ykfitImage/image1.jpg";
-import image2 from "../assets/ykfitImage/image2.jpg";
+import backgroundImageimage from "../assets/homeImage/homeImage.webp";
+import image from "../assets/ykfitImage/image.webp";
+import image1 from "../assets/ykfitImage/image1.webp";
+import image2 from "../assets/ykfitImage/image2.webp";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 const Home = () => {
   return (
