@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Menu, X, Cpu } from "lucide-react"; // Lucide icon for tech logo and toggle
+import { Menu, X, Cpu } from "lucide-react";
+import logo from '../../assets/homeImage/logo.webp'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,13 +21,13 @@ const Navbar = () => {
           {/* Logo */}
           <NavLink to='/' >
             <div className="flex items-center cursor-pointer space-x-2 whitespace-nowrap">
-              <Cpu className="w-6 h-6 text-red-600" />
+              <img src={logo}  className="w-15 h-15  " alt="" />
               <span className="text-xl font-semibold text-gray-800">YKFit Solutions</span>
             </div>
 
           </NavLink>
           {/* Desktop Menu */}
-          <div className="hidden md:flex justify-between items-center w-full px-6">
+          <div className="hidden md:flex justify-around items-center w-full ">
             <ul className="flex space-x-6">
               <li>
                 <NavLink
